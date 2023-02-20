@@ -1,0 +1,158 @@
+body {
+    background-color: #E5E5E5;
+  }
+
+.mainContainer {
+    margin: auto;
+    width: 1444px;
+    height: 4888px;
+    background-color: white;
+}
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    height: 75px;
+    max-width: 1444px;
+    margin: auto;
+}
+
+.headerContainer ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerContainer li {
+    text-decoration: underline;
+}
+
+.headerContainer li:first-child {
+    color: rgba(136, 135, 135, 1);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60rem;
+
+}
+
+.navigationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1444px;
+    margin: auto;
+
+
+
+}
+
+.navigationElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationElement {
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid #888787;
+    background-color: white;
+}
+
+.navigationElement:first-child {
+    border-left: 0.5px solid #888787;
+}
+
+.navigationElementDescription {
+    font-size: 12px;
+    color: rgba(71, 71, 71, 1);
+}
+
+.navigationElement a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 1);
+}
+
+.mySlides2 {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1444px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.homeContainer {
+    width: 1440px;
+    height: 705px;
+}
+
+.homeImg {
+    position: relative;
+    left: 0px;
+    bottom: 70px;
+    top: 73px;
+}
+
+.companyContainer {
+    position: absolute;
+    width: 700px;
+    left: 765px;
+    top: 963px;
+}
+
+.company {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 34px;
+}
