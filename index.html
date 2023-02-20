@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DVG Company</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+<div class="headerContainer">
+    <div class="header">
+        <div>
+            <img src="img/logo.png" width="218" height="44" alt="logo">
+        </div>
+        <ul>
+            <li>Srpski</li>
+            <li>English</li>
+            <li>Magyar</li>
+        </ul>   
+    </div>
+</div>
+<div class="navigationContainer">
+    <div class="navigationElements">
+        <div class="navigationElement">
+            <a href="#">
+                <span>O NAMA</span>
+            </a>
+                <span class="navigationElementDescription">vizija za uspeh</span>
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>DVG PROIZVODI</span>
+            </a>
+                <span class="navigationElementDescription">naši proizvodi</span>
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>BRENDOVI</span>
+            </a>
+                <span class="navigationElementDescription">koje zasupamo</span>
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>DISTRIBUCIJA</span>
+            </a>
+                <span class="navigationElementDescription">logistika i operativa</span>
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>SARADNJA</span>
+            </a>
+            <span class="navigationElementDescription">poširenje ponude</span>
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>NOVOSTI</span>
+            </a>
+            <span class="navigationElementDescription">aktuelnosti</span>
+            
+        </div>
+        <div class="navigationElement">
+            <a href="#">
+                <span>KONTAKT</span>
+            </a>
+            <span class="navigationElementDescription">kontaktirajte nas</span>
+        </div>
+    </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="img/Video.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img/Video.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img/Video.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<div class="homeContainer">
+    <div class="homeImg">
+        <img src="img/Rectangle 124.png" alt="company" width="710px" height="504px">
+    </div>
+    <div class="companyContainer">
+        <p class="company">DVG COMPANY</p>
+    </div>
+    
+</div>
+</div>
+</body>
+
+</html>
