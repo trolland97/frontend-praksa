@@ -4,8 +4,7 @@ body {
 
 .mainContainer {
     margin: auto;
-    width: 1444px;
-    height: 4888px;
+    width: 100%;
     background-color: white;
 }
 .headerContainer {
@@ -15,7 +14,7 @@ body {
     align-items: center;
     background-color: #D9D9D9;
     height: 75px;
-    max-width: 1444px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -51,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    max-width: 1444px;
+    max-width: 100%;
     margin: auto;
 
 
@@ -91,7 +90,7 @@ body {
     color:rgba(0, 0, 0, 1);
 }
 
-.mySlides2 {
+.mySlides {
     display: none
 }
 img {
@@ -99,7 +98,7 @@ img {
 }
 
 .slideshow-container {
-    max-width: 1444px;
+    max-width: 100%;
     position: relative;
     margin: auto;
   }
@@ -130,7 +129,7 @@ img {
 }
 
 .homeContainer {
-    width: 1440px;
+    width: 100%;
     height: 705px;
 }
 
@@ -143,9 +142,10 @@ img {
 
 .companyContainer {
     position: absolute;
-    width: 700px;
+    width: 400px;
     left: 765px;
     top: 963px;
+    padding-top: 15px;
 }
 
 .company {
@@ -154,5 +154,31 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-    line-height: 34px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.company::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 137px;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+}
+
+h2 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    background-color: silver;
+    width: 400px;
+    height: 6px;
+    bottom: 0;
+    left: 0;
 }
