@@ -201,8 +201,45 @@ h3 {
 
 .fixedImage {
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    height: 502px;
+    background-image: url('../assets/images/fixedImage.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.distributionContainer {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dImages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description {
+    padding-top: 5px;
+    position: relative;
+}
+
+.description::after {
+    content: '';
+    position: absolute;
+    background-color: #BF0F0F;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+
+
+
