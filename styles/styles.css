@@ -1,12 +1,8 @@
 body {
     background-color: #E5E5E5;
-  }
 
-.mainContainer {
-    margin: auto;
-    width: 100%;
-    background-color: white;
 }
+
 .headerContainer {
     display: flex;
     flex-direction: row;
@@ -41,7 +37,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 60rem;
-
 }
 
 .navigationContainer {
@@ -52,9 +47,6 @@ body {
     background-color: white;
     max-width: 100%;
     margin: auto;
-
-
-
 }
 
 .navigationElements {
@@ -93,6 +85,7 @@ body {
 .mySlides {
     display: none
 }
+
 img {
     vertical-align: middle;
 }
@@ -101,9 +94,9 @@ img {
     max-width: 100%;
     position: relative;
     margin: auto;
-  }
+}
   
-  .prev, .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -116,21 +109,21 @@ img {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     background-color: #f1f1f1;
     color: black;
 }
 
 .homeContainer {
-    width: 100%;
     height: 705px;
+    display: flex;
 }
 
 .homeImg {
@@ -141,44 +134,75 @@ img {
 }
 
 .companyContainer {
-    position: absolute;
-    width: 400px;
-    left: 765px;
-    top: 963px;
-    padding-top: 15px;
+    position: relative;
+    padding-top: 100px;
 }
 
-.company {
-    text-align: center;
+h1 {
+    text-align: left;
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
     position: relative;
     padding-bottom: 20px;
+    padding-left: 50px;
 }
 
-.company::after {
+h1::after {
     content: '';
     position: absolute;
-    background-color: red;
+    background-color: #BF0F0F;
     width: 137px;
     height: 6px;
     bottom: 0;
-    left: 0;
+    left: 50px;
+
 }
 
 h2 {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    font-family: 'Roboto';
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    width: 500px;
+    font-size: 30px;
 }
 
 h2::after {
     content: '';
     position: absolute;
-    background-color: silver;
+    background-color: #C4C4C4;
     width: 400px;
-    height: 6px;
-    bottom: 0;
-    left: 0;
+    height: 3px;
+    left: 50px;
+    top: 300px;
+}
+
+h3 {
+    text-align: left;
+    font-family: 'Roboto';
+    position: relative;
+    padding-left: 50px;
+}
+
+.button {
+    background-color: #BF0F0F;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.moreInfo {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+.fixedImage {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
 }
