@@ -67,45 +67,55 @@
     </div>
 
     <div class="slideshow-container">
-        <div class="mySlides">
-            <img src="assets/images/Video.png" style="width: 100%" />
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/images/Video.png" style="width:100%;height: 90vh;">
         </div>
 
-        <div class="mySlides">
-            <img src="assets/images/Video.png" style="width: 100%" />
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/images/slideshow1.jpg" style="width:100%;height: 90vh;">
         </div>
 
-        <div class="mySlides">
-            <img src="assets/images/Video.png" style="width: 100%" />
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/images/slideshow2.jpg    " style="width:100%;height: 90vh;">
         </div>
 
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <script>
-        let slideIndex = [1, 1];
-        let slideId = ["mySlides"];
-        showSlides(1, 0);
-        showSlides(1, 1);
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        function plusSlides(n, no) {
-            showSlides((slideIndex[no] += n), no);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
 
-        function showSlides(n, no) {
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
             let i;
-            let x = document.getElementsByClassName(slideId[no]);
-            if (n > x.length) {
-                slideIndex[no] = 1;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            if (n < 1) {
-                slideIndex[no] = x.length;
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex[no] - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
     <div class="homeContainer">
@@ -132,16 +142,16 @@
     <div class="distributionContainer">
         <div class="dImages">
             <img src="assets/images/Rectangle 128.png" alt="distribution1" width="400px" height="278px" />
-            <span class="description">POSTANITE NAS PARTNER</span>
+            <span class="description">POSTANITE NAŠ PARTNER</span>
         </div>
 
         <div class="dImages">
             <img src="assets/images/Rectangle 129.png" alt="distribution2" width="400px" height="278px" />
-            <span class="description">POSTANITE NAS PARTNER</span>
+            <span class="description">NAŠI PROIZVODI</span>
         </div>
         <div class="dImages">
             <img src="assets/images/Rectangle 130.png" alt="distribution3" width="400px" height="278px" />
-            <span class="description">POSTANITE NAS PARTNER</span>
+            <span class="description">UVOZ IZ MAĐARSKE</span>
         </div>
     </div>
     <div class="nameContainer">

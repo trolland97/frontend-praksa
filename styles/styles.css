@@ -82,19 +82,17 @@ li {
     color: rgba(0, 0, 0, 1);
 }
 
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-}
-
 .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
 }
+
+
+.mySlides {
+    display: none;
+}
+
 
 .prev,
 .next {
@@ -102,8 +100,8 @@ img {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
     margin-top: -22px;
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -112,20 +110,47 @@ img {
     user-select: none;
 }
 
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+
 .prev:hover,
 .next:hover {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .homeContainer {
     height: 705px;
     display: flex;
+    gap: 3rem;
 }
 
 .homeImg {
@@ -136,8 +161,9 @@ img {
 }
 
 .companyContainer {
+    margin-top: 73px;
     position: relative;
-    padding-top: 100px;
+    height: 504px;
 }
 
 h1 {
@@ -145,7 +171,6 @@ h1 {
     font-family: "Roboto";
     position: relative;
     padding-bottom: 20px;
-    padding-left: 50px;
 }
 
 h1::after {
@@ -155,33 +180,31 @@ h1::after {
     width: 137px;
     height: 6px;
     bottom: 0;
-    left: 50px;
+    left: 0;
 }
 
 h2 {
     font-family: "Roboto";
     padding-top: 5px;
     padding-bottom: 30px;
-    padding-left: 50px;
     width: 500px;
     font-size: 30px;
+    position: relative;
 }
 
 h2::after {
     content: "";
     position: absolute;
     background-color: #c4c4c4;
-    width: 400px;
+    width: 500px;
     height: 3px;
-    left: 50px;
-    top: 300px;
+    bottom: 0;
+    left: 0;
 }
 
 h3 {
     text-align: left;
     font-family: "Roboto";
-    position: relative;
-    padding-left: 50px;
 }
 
 .button {
@@ -191,14 +214,11 @@ h3 {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    bottom: 0;
+    position: absolute;
 }
 
-.moreInfo {
-    padding-left: 50px;
-    padding-top: 70px;
-}
 
 .fixedImage {
     width: 100%;
@@ -217,18 +237,19 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .dImages {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
 }
 
 .description {
-    padding-top: 5px;
     position: relative;
+    padding-bottom: 5px;
 }
 
 .description::after {
@@ -237,16 +258,15 @@ h3 {
     background-color: #bf0f0f;
     width: 50px;
     height: 2px;
-    position: absolute;
     left: 0;
-    top: 25px;
+    bottom: 0;
 }
 
 .nameContainer {
     width: 100%;
     height: 250px;
     text-align: center;
-    padding-top: 150px;
+    margin-top: 40px;
 }
 
 .name {
@@ -260,20 +280,21 @@ h3 {
     font-size: 25px;
     flex-direction: column;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
 }
 
-.secondName::before {
+.secondName::after {
     content: "";
     position: absolute;
     background-color: #bf0f0f;
     width: 137px;
     height: 6px;
-    top: 30px;
-    left: 50%;
+    bottom: 0;
 }
 
 .aboutContainer {
     width: 100%;
     height: 345px;
-    top: 30px;
 }
