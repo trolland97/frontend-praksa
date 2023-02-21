@@ -1,5 +1,4 @@
 body {
-    background-color: #e5e5e5;
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
@@ -127,16 +126,6 @@ li {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -212,7 +201,7 @@ li {
     font-family: "Roboto";
 }
 
-.button {
+.buttonInfo {
     background-color: #bf0f0f;
     color: white;
     padding: 15px 32px;
@@ -222,7 +211,7 @@ li {
     cursor: pointer;
     bottom: 0;
     position: absolute;
-    font-family: 'Roboto';
+    border-radius: 5px;
 }
 
 
@@ -331,8 +320,15 @@ li {
     border: none;
 }
 
+.productsContainer {
+    background-color: silver;
+    position: relative;
+    padding-bottom: 50px;
+
+}
+
 .productsTitle {
-    color: silver;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -341,7 +337,7 @@ li {
 
 .productsTitle::after {
     content: "";
-    background-color: silver;
+    background-color: black;
     width: 524px;
     height: 3px;
     left: 0;
@@ -362,7 +358,8 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+
 }
 
 .cards {
@@ -371,13 +368,12 @@ li {
     align-items: flex-start;
     justify-content: center;
     position: relative;
-
 }
 
 .cardDesc {
     text-align: left;
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     padding-left: 15px;
     padding-bottom: 5px;
 }
@@ -390,4 +386,87 @@ li {
     height: 6px;
     bottom: 0;
     left: 15px;
+}
+
+.productsLogo {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+}
+
+.brandContainer {
+    padding-bottom: 10px;
+}
+
+.brandTitle {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.brandTitle::after {
+    content: "";
+    background-color: black;
+    width: 524px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+}
+
+.brandsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands img {
+    width: 100px;
+    height: 50px;
+}
+
+.brandDesc {
+    text-align: center;
+    bottom: 25px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.buttonBrands {
+    background-color: #bf0f0f;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.footer {
+    background-image: url('../assets/images/footerbg.png');
+    width: 100%;
+    height: 250px;
 }
