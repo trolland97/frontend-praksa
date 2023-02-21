@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>DVG Company</title>
-<link rel="stylesheet" href="styles/styles.css">
+    <title>DVG Company</title>
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-<div class="headerContainer">
-    <div class="header">
-        <div>
-            <img src="assets/images/logo.png" width="218" height="44" alt="logo">
+    <div class="headerContainer">
+        <div class="header">
+            <div>
+                <img src="assets/images/logo.png" width="218" height="44" alt="logo" />
+            </div>
+            <ul>
+                <li>Srpski</li>
+                <li>English</li>
+                <li>Magyar</li>
+            </ul>
         </div>
-        <ul>
-            <li>Srpski</li>
-            <li>English</li>
-            <li>Magyar</li>
-        </ul>   
     </div>
-</div>
-<div class="navigationContainer">
-    <div class="navigationElements">
-        <div class="navigationElement">
-            <a href="#">
-                <span>O NAMA</span>
-            </a>
+    <div class="navigationContainer">
+        <div class="navigationElements">
+            <div class="navigationElement">
+                <a href="#">
+                    <span>O NAMA</span>
+                </a>
                 <span class="navigationElementDescription">vizija za uspeh</span>
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>DVG PROIZVODI</span>
-            </a>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>DVG PROIZVODI</span>
+                </a>
                 <span class="navigationElementDescription">naši proizvodi</span>
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>BRENDOVI</span>
-            </a>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>BRENDOVI</span>
+                </a>
                 <span class="navigationElementDescription">koje zasupamo</span>
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>DISTRIBUCIJA</span>
-            </a>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>DISTRIBUCIJA</span>
+                </a>
                 <span class="navigationElementDescription">logistika i operativa</span>
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>SARADNJA</span>
-            </a>
-            <span class="navigationElementDescription">poširenje ponude</span>
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>NOVOSTI</span>
-            </a>
-            <span class="navigationElementDescription">aktuelnosti</span>
-            
-        </div>
-        <div class="navigationElement">
-            <a href="#">
-                <span>KONTAKT</span>
-            </a>
-            <span class="navigationElementDescription">kontaktirajte nas</span>
-        </div>
-    </div>
-</div>
-
-<div class="slideshow-container">
-  <div class="mySlides">
-    <img src="assets/images/Video.png" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="assets/images/Video.png" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="assets/images/Video.png" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-</div>
-
-<script>
-let slideIndex = [1,1];
-let slideId = ["mySlides"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
-<div class="homeContainer">
-    <div class="homeImg">
-        <img src="assets/images/Rectangle 124.png" alt="company" width="710px" height="504px">
-    </div>
-    <div class="companyContainer">
-        <h1>DVG COMPANY</h1>
-        <h2>Veleprodaja i maloprodaja kozmetike i kucne hemije</h2>
-        <h3>DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici. Prevenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije. U potpunosti je u privatnom vlasništvu, sa sedištem u Subotici. Tu se nalazi distrubutivni centar i poslovne prostorije, sa ukupno 3000m2 magacinskog prostora koji zadovoljava sve segmente u pogledu smeštaja, čuvanja i plasiranja robe.</h3>
-        <div class="moreInfo">
-            <a href="#" class="button">Saznajte više o nama</a>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>SARADNJA</span>
+                </a>
+                <span class="navigationElementDescription">poširenje ponude</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>NOVOSTI</span>
+                </a>
+                <span class="navigationElementDescription">aktuelnosti</span>
+            </div>
+            <div class="navigationElement">
+                <a href="#">
+                    <span>KONTAKT</span>
+                </a>
+                <span class="navigationElementDescription">kontaktirajte nas</span>
+            </div>
         </div>
     </div>
-    
-</div>
-<div class="fixedImage">
-</div>
-<div class="distributionContainer">
-    <div class="dImages"><img src="assets/images/Rectangle 128.png" alt="distribution1" width="400px" height="278px">
-        <span class="description">POSTANITE NAS PARTNER</span>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="assets/images/Video.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+            <img src="assets/images/Video.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+            <img src="assets/images/Video.png" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
     </div>
-    
-    <div class="dImages"><img src="assets/images/Rectangle 129.png" alt="distribution2" width="400px" height="278px">
-        <span class="description">POSTANITE NAS PARTNER</span>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides"];
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides((slideIndex[no] += n), no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1;
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+    <div class="homeContainer">
+        <div class="homeImg">
+            <img src="assets/images/Rectangle 124.png" alt="company" width="710px" height="504px" />
+        </div>
+        <div class="companyContainer">
+            <h1>DVG COMPANY</h1>
+            <h2>Veleprodaja i maloprodaja kozmetike i kucne hemije</h2>
+            <h3>
+                DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u
+                Subotici. Prevenstvena delatnost kompanije je veleprodaja kozmetike i
+                kućne hemije. U potpunosti je u privatnom vlasništvu, sa sedištem u
+                Subotici. Tu se nalazi distrubutivni centar i poslovne prostorije, sa
+                ukupno 3000m2 magacinskog prostora koji zadovoljava sve segmente u
+                pogledu smeštaja, čuvanja i plasiranja robe.
+            </h3>
+            <div class="moreInfo">
+                <a href="#" class="button">Saznajte više o nama</a>
+            </div>
+        </div>
     </div>
-    <div class="dImages"><img src="assets/images/Rectangle 130.png" alt="distribution3" width="400px" height="278px">
-        <span class="description">POSTANITE NAS PARTNER</span>
+    <div class="fixedImage"></div>
+    <div class="distributionContainer">
+        <div class="dImages">
+            <img src="assets/images/Rectangle 128.png" alt="distribution1" width="400px" height="278px" />
+            <span class="description">POSTANITE NAS PARTNER</span>
+        </div>
+
+        <div class="dImages">
+            <img src="assets/images/Rectangle 129.png" alt="distribution2" width="400px" height="278px" />
+            <span class="description">POSTANITE NAS PARTNER</span>
+        </div>
+        <div class="dImages">
+            <img src="assets/images/Rectangle 130.png" alt="distribution3" width="400px" height="278px" />
+            <span class="description">POSTANITE NAS PARTNER</span>
+        </div>
     </div>
-</div>
-<div class="nameContainer ">
-    <span class="name">DVG COMPANY</span>
-    <span class="secondName">u brojkama</span>
-</div>
+    <div class="nameContainer">
+        <span class="name">DVG COMPANY</span>
+        <span class="secondName">u brojkama</span>
+    </div>
+    <div class="aboutContainer">
+        <img src="assets/images/Rectangle 140.png" alt="about" width="100%" height="345px" />
+    </div>
 </body>
 
 </html>
