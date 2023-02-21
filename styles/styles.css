@@ -362,6 +362,15 @@ li {
 
 }
 
+.buttonPrev img {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.buttonNext img {
+    cursor: pointer;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
