@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -21,6 +22,7 @@
                 <li>Srpski</li>
                 <li>English</li>
                 <li>Magyar</li>
+                <button class="darkmodeBtn" onclick="darkMode()">Dark Mode</button>
             </ul>
         </div>
     </div>
@@ -112,11 +114,11 @@
         </div>
     </div>
     <div class="fixedImage">
-        <div>
-            <span class="fixDesc">Pouzdana distribucija</span>
+        <div class="fixedDesc">
+            <span>POUZDANA DISTRIBUCIJA</span>
         </div>
     </div>
-    <div class="distributionContainer">
+    <div class="distributionContainer" data-aos="fade-up">
         <div class="dImages">
             <img src="assets/images/Rectangle 128.png" alt="distribution1" width="400px" height="278px" />
             <span class="description">POSTANITE NAŠ PARTNER</span>
@@ -131,11 +133,11 @@
             <span class="description">UVOZ IZ MAĐARSKE</span>
         </div>
     </div>
-    <div class="nameContainer">
+    <div class="nameContainer" data-aos="fade-up">
         <span class="name">DVG COMPANY</span>
         <span class="secondName">u brojkama</span>
     </div>
-    <div class="aboutContainer">
+    <div class="aboutContainer" data-aos="fade-up">
         <div class="aboutElement">
             <span style="font-size: 25pt; font-weight: bold;">3000<span style="font-size: 15pt;">㎡</span></span>
             <span>Magacinskog prostora</span>
@@ -149,11 +151,11 @@
             <span>komercijalista</span>
         </div>
         <div class="aboutElement">
-            <span style="font-size: 25pt; font-weight: bold;">170</font></span>
+            <span style="font-size: 25pt; font-weight: bold;">170</span>
             <span>Brendova</span>
         </div>
     </div>
-    <div class="productsContainer">
+    <div class="productsContainer" data-aos="fade-up">
         <div class="productsTitle">
             <h1>Nasi proizvodi</h1>
         </div>
@@ -207,7 +209,7 @@
             <img src="assets/images/productslogo.png" alt="productslogo">
         </div>
     </div>
-    <div class="brandContainer">
+    <div class="brandContainer" data-aos="fade-up">
         <div class="brandTitle">
             <h1>Istaknuti brendovi za koje radimo distribuciju</h1>
         </div>
@@ -284,6 +286,9 @@
 </body>
 <script src="assets/js/slideshow.js"></script>
 <script src="assets/js/cardslider.js"></script>
+<script src="assets/js/darkmode.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="assets/js/aos.js"></script>
 
 
 </html>

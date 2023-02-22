@@ -2,6 +2,20 @@ body {
     font-family: 'Roboto';
     margin: 0;
     padding: 0;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: #52595D;
+    color: white;
+}
+
+.darkmodeBtn {
+    text-decoration: none;
+    border: 0;
+    background-color: #BF0F0F;
+    cursor: pointer;
+    color: white;
 }
 
 .headerContainer {
@@ -46,7 +60,6 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
     max-width: 100%;
     margin: auto;
 }
@@ -67,7 +80,6 @@ li {
     justify-content: center;
     align-items: center;
     border-right: 0.5px solid #888787;
-    background-color: white;
 }
 
 .navigationElement:first-child {
@@ -76,12 +88,12 @@ li {
 
 .navigationElementDescription {
     font-size: 12px;
-    color: rgba(71, 71, 71, 1);
+    color: black;
 }
 
 .navigationElement a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
+    color: black;
 }
 
 .slideshow-container {
@@ -142,6 +154,7 @@ li {
 .homeContainer {
     display: flex;
     gap: 3rem;
+    padding-bottom: 25px;
 }
 
 .homeImg {
@@ -213,15 +226,38 @@ li {
 
 
 .fixedImage {
-    width: 100%;
     height: 502px;
     background-image: url("../assets/images/fixedImage.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.fixDesc {}
+.fixedDesc span {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.fixedDesc span::after {
+    content: '';
+    position: absolute;
+    background-color: #BF0F0F;
+    width: 137px;
+    height: 6px;
+    bottom: 0;
+}
 
 .distributionContainer {
     padding-top: 100px;
@@ -244,6 +280,7 @@ li {
 .description {
     position: relative;
     padding-bottom: 5px;
+    color: #474747;
 }
 
 .description::after {
@@ -495,7 +532,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 150px;
     margin: auto;
     border-radius: 5px;
 }
