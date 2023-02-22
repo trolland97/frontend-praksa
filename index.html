@@ -5,6 +5,9 @@
     <title>DVG Company</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 
 </head>
 
@@ -108,7 +111,11 @@
             </div>
         </div>
     </div>
-    <div class="fixedImage"></div>
+    <div class="fixedImage">
+        <div>
+            <span class="fixDesc">Pouzdana distribucija</span>
+        </div>
+    </div>
     <div class="distributionContainer">
         <div class="dImages">
             <img src="assets/images/Rectangle 128.png" alt="distribution1" width="400px" height="278px" />
@@ -130,7 +137,7 @@
     </div>
     <div class="aboutContainer">
         <div class="aboutElement">
-            <span style="font-size: 25pt; font-weight: bold;">3000m2</span>
+            <span style="font-size: 25pt; font-weight: bold;">3000<span style="font-size: 15pt;">㎡</span></span>
             <span>Magacinskog prostora</span>
         </div>
         <div class="aboutElement">
@@ -153,34 +160,49 @@
         <div class="productsDesc"><span>Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna
                 nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši kupci.</span></div>
 
-        <div class="productsCard">
-            <div class="buttonPrev">
-                <img src="assets/images/button-next.jpg" alt="buttonprev" width="50px" height="50px" onclick="">
-            </div>
-            <div class="cards">
-                <img src="assets/images/card1.png" alt="card1">
-                <span class="cardDesc">KESE I FOLIJE</span>
-            </div>
-            <div class="cards">
-                <img src="assets/images/card2.png" alt="card2">
-                <span class="cardDesc">ZA KUHINJU</span>
-            </div>
-            <div class="cards">
-                <img src="assets/images/card3.png" alt="card3">
-                <span class="cardDesc">UBRUSI I TOALET PAPIRI</span>
-            </div>
-            <div class="cards">
-                <img src="assets/images/card4.png" alt="card4">
-                <span class="cardDesc">KOZMETIKA</span>
-            </div>
-            <div class="cards">
-                <img src="assets/images/card5.png" alt="card5">
-                <span class="cardDesc">PLASTICNE KANTE</span>
-            </div>
-            <div class="buttonNext">
-                <img src="assets/images/button-next.jpg" alt="buttonnext" width="50px" height="50px" onclick="">
+        <div id="container">
+            <div id="slider-container">
+                <span class="btn"><span onclick="slideRight()"><i class="fa fa-arrow-circle-left"
+                            style="font-size:36px;color: #bf0f0f;"></i></span></span>
+                <div id="slider">
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/card1.png" alt="card1">
+                            <span class="cardDesc">KESE I FOLIJE</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/card2.png" alt="card2">
+                            <span class="cardDesc">ZA KUHINJU</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/card3.png" alt="card3">
+                            <span class="cardDesc">UBRUSI I TOALET PAPIRI</span>
+                        </div>
+                    </div>
+                    <div class="slide"><span>
+                            <div class="cards">
+                                <img src="assets/images/card4.png" alt="card4">
+                                <span class="cardDesc">KOZMETIKA</span>
+                            </div>
+                        </span></div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/card5.png" alt="card5">
+                            <span class="cardDesc">PLASTICNE KANTE</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="btn"><span onclick="slideLeft()"><i class="fa fa-arrow-circle-right"
+                            style="font-size:36px;color: #bf0f0f;"></i></span></span>
             </div>
         </div>
+
+
+
         <div class="productsLogo">
             <img src="assets/images/productslogo.png" alt="productslogo">
         </div>
@@ -219,8 +241,49 @@
             <a href="#" class="buttonBrands">Svi brendovi u nasem portfoliju</a>
         </div>
     </div>
-    <div class="footer"></div>
+    <div class="footerContainer">
+        <div class="footerContents">
+            <img src="assets/images/Frame.png" alt="footerlogo" height="85px" width="85px">
+            <div class="footerContacts">
+                <span class="footerCompanyName">D.V.G. COMPANY</span>
+                <div class="contacts">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Čantavirski put bb 24000 Subotica, Srbija</span>
+                </div>
+                <div class="contacts">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+38124568555">+381 24 568 555</a>
+                </div>
+                <div class="contacts">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto: office@dvgcompany.com">office@dvgcompany.com</a>
+                </div>
+            </div>
+            <div class="footerNavbar">
+                <a href="#">O NAMA</a>
+                <a href="#">DVG PROIZVODI</a>
+                <a href="#">BRENDOVI</a>
+                <a href="#">DISTRIBUCIJA</a>
+                <a href="#">SARADNJA</a>
+                <a href="#">NOVOSTI</a>
+                <a href="#">KONTAKT</a>
+            </div>
+            <div class="footerSocialmedia">
+                <span style="color:white; font-size: 12pt;">Pratite nas:</span>
+                <div class="smlogos">
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: white; font-size: 12pt;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: white; font-size: 12pt;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" style="color: white; font-size: 12pt;"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger"
+                            style="color: white; font-size: 12pt;"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="assets/js/slideshow.js"></script>
+<script src="assets/js/cardslider.js"></script>
+
 
 </html>

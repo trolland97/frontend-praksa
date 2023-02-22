@@ -39,7 +39,6 @@ li {
     justify-content: center;
     align-items: center;
     gap: 60rem;
-    font-family: 'Roboto';
 }
 
 .navigationContainer {
@@ -69,7 +68,6 @@ li {
     align-items: center;
     border-right: 0.5px solid #888787;
     background-color: white;
-    font-family: 'Roboto';
 }
 
 .navigationElement:first-child {
@@ -142,7 +140,6 @@ li {
 }
 
 .homeContainer {
-    height: 705px;
     display: flex;
     gap: 3rem;
 }
@@ -162,9 +159,9 @@ li {
 
 .titleName {
     text-align: left;
-    font-family: "Roboto";
     position: relative;
     padding-bottom: 20px;
+    color: #303030;
 }
 
 .titleName::after {
@@ -178,12 +175,12 @@ li {
 }
 
 .titleProff {
-    font-family: "Roboto";
     padding-top: 5px;
     padding-bottom: 30px;
     width: 500px;
     font-size: 30px;
     position: relative;
+    color: #474747;
 }
 
 .titleProff::after {
@@ -198,7 +195,7 @@ li {
 
 .titleDesc {
     text-align: left;
-    font-family: "Roboto";
+    color: #474747;
 }
 
 .buttonInfo {
@@ -218,11 +215,13 @@ li {
 .fixedImage {
     width: 100%;
     height: 502px;
-    background-image: url("../assets/images/fixedImage.png");
+    background-image: url("../assets/images/fixedImage.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+.fixDesc {}
 
 .distributionContainer {
     padding-top: 100px;
@@ -240,13 +239,11 @@ li {
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    font-family: 'Roboto';
 }
 
 .description {
     position: relative;
     padding-bottom: 5px;
-    font-family: 'Roboto';
 }
 
 .description::after {
@@ -261,15 +258,15 @@ li {
 
 .nameContainer {
     width: 100%;
-    height: 250px;
+    height: 150px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .name {
     font-size: 50px;
     text-align: center;
-    font-family: 'Roboto';
+    color: #303030;
 }
 
 .secondName {
@@ -281,7 +278,7 @@ li {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    font-family: 'Roboto';
+    color: #474747;
 }
 
 .secondName::after {
@@ -309,7 +306,7 @@ li {
     justify-content: center;
     align-items: center;
     height: 152px;
-    width: 200px;
+    width: 100%;
     border-left: 1px solid #888787;
     color: white;
 
@@ -321,14 +318,14 @@ li {
 }
 
 .productsContainer {
-    background-color: silver;
+    background-color: #f4f4f4;
     position: relative;
     padding-bottom: 50px;
 
 }
 
 .productsTitle {
-    color: black;
+    color: #474747;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -337,7 +334,7 @@ li {
 
 .productsTitle::after {
     content: "";
-    background-color: black;
+    background-color: #c4c4c4;
     width: 524px;
     height: 3px;
     left: 0;
@@ -345,7 +342,7 @@ li {
 }
 
 .productsDesc {
-    color: black;
+    color: #474747;
     text-align: center;
     margin: auto;
     width: 50%;
@@ -353,38 +350,65 @@ li {
     padding-bottom: 50px;
 }
 
-.productsCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-
+#container {
+    height: 50vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: grid;
+    place-items: center
 }
 
-.buttonPrev img {
-    transform: rotate(180deg);
-    cursor: pointer;
-}
-
-.buttonNext img {
-    cursor: pointer;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+#slider-container {
+    height: 300px;
+    width: 70vw;
+    background: #f4f4f4;
     position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
+
+#slider-container .btn {
+    position: absolute;
+    top: calc(50% - 10px);
+    height: 30px;
+    width: 30px;
+}
+
+#slider-container .btn:first-of-type {
+    left: 6px;
+}
+
+#slider-container .btn:last-of-type {
+    right: 6px;
+}
+
+#slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container #slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
 
 .cardDesc {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     position: absolute;
     bottom: 25px;
     padding-left: 15px;
     padding-bottom: 5px;
+    color: #474747;
 }
 
 .cardDesc::after {
@@ -416,11 +440,12 @@ li {
     width: 35%;
     margin: auto;
     text-align: center;
+    color: #474747;
 }
 
 .brandTitle::after {
     content: "";
-    background-color: black;
+    background-color: #c4c4c4;
     width: 524px;
     height: 3px;
     left: 0;
@@ -454,6 +479,7 @@ li {
     bottom: 25px;
     padding-left: 15px;
     padding-bottom: 5px;
+    color: #474747;
 }
 
 .buttonBrands {
@@ -469,13 +495,158 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 50%;
     margin: auto;
     border-radius: 5px;
 }
 
-.footer {
+.footerContainer {
     background-image: url('../assets/images/footerbg.png');
-    width: 100%;
-    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.footerContents {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10rem;
+}
+
+.footerContacts {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    height: 200px;
+    border-left: 2px solid rgba(255, 255, 255, 0.26);
+    padding: 0px 0px 10px 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    gap: 1rem;
+}
+
+.contacts a {
+    color: #fff;
+}
+
+.footerCompanyName {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footerNavbar {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 200px;
+    font-size: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
+    padding: 0px 0px 10px 25px;
+}
+
+.footerNavbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerSocialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 12px;
+    gap: 2rem;
+    height: 200px;
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
+    padding: 0px 0px 15px 25px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #slider-container #slider .slide {
+        width: calc(2.5% - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #slider-container #slider .slide {
+        width: calc(3.3333333% - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    #slider-container #slider .slide {
+        width: calc(5% - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    #slider-container #slider .slide {
+        width: calc(10% - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .companyContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleDesc {
+        text-align: center;
+    }
+
+    .moreInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .distributionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandsCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
