@@ -211,18 +211,19 @@ li {
 }
 
 .homeImg {
-    position: relative;
-    left: 0px;
     bottom: 70px;
     top: 73px;
-    width: 710px;
+    width: 100%;
     height: 504px;
+    left: 0;
+
 }
 
 .companyContainer {
     margin-top: 73px;
     position: relative;
     height: 504px;
+    width: 100%;
 }
 
 .titleName {
@@ -291,6 +292,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .fixedDesc span {
@@ -330,6 +332,11 @@ li {
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+}
+
+.dImages img {
+    width: 400px;
+    height: 278px;
 }
 
 .description {
@@ -488,6 +495,16 @@ li {
     margin: auto 10px;
     display: grid;
     place-items: center;
+}
+
+#slider {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -669,6 +686,46 @@ li {
     padding: 0px 0px 15px 25px;
 }
 
+.copyrightContent {
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.copyright a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.3);
+}
+/* Responsibility */
+
+@media only screen and (max-width: 1500px) {
+
+    .copyright {
+        gap: 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .copyright {
+        gap: 2rem;
+    }
+
+}
+
 @media only screen and (min-width: 1100px) {
 
     #slider-container #slider .slide {
@@ -740,10 +797,6 @@ li {
         justify-content: center;
         align-items: center;
     }
-
-}
-
-@media only screen and (max-width: 1200px) {
     .navigationContainer {
         display: none;
     }
@@ -751,7 +804,17 @@ li {
     .hamburgMenu {
         display: block;
     }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        padding: 0;
+    }
+
 }
+
 
 @media only screen and (max-width: 1800px) {
     .header {
@@ -775,17 +838,6 @@ li {
 
 }
 
-@media only screen and (max-width: 1200px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10rem;
-        padding: 0;
-    }
-
-}
 
 @media only screen and (max-width: 1000px) {
     .header {
@@ -832,27 +884,96 @@ li {
         border: none;
     }
 
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyrightContent {
+        height: 200px;
+    }
+
+    .copyright span {
+        text-align: center;
+    }
+
+
 }
 
 @media only screen and (max-width: 710px) {
-    .homeImg {
-        width: 510px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .homeImg img {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        top: 50px;
 
+    }
+
+    .headerContainer {
+        width: 100% !important;
+    }
+
+    .titleProff {
+        width: 100%;
+        text-align: center;
+    }
+
+    .companyContainer {
+        margin-top: 55px;
     }
 }
 
-@media only screen and (max-width: 510px) {
-    .homeImg {
-        width: 310px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media only screen and (max-width: 600px) {
+    .homeImg img {
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        position: relative;
 
     }
+
+    .titleDesc {
+        font-size: 15px;
+    }
+
+    .companyContainer {
+        margin-top: 50px;
+    }
+
 }
+
+@media only screen and (max-width: 450px) {
+    .homeImg img {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        top: 25px;
+
+    }
+
+    .companyContainer {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .dImages img {
+        width: 100%;
+
+    }
+
+    .titleDesc {
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
     .aboutContainer {
@@ -862,4 +983,63 @@ li {
         align-items: center;
 
     }
+}
+
+@media only screen and (max-width: 524px) {
+    .productsTitle::after {
+        width: 100%;
+
+    }
+
+    .titleProff::after {
+        width: 100%;
+
+    }
+
+    .brandTitle::after {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .fixedDesc span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .cards img {
+        width: 80%;
+    }
+
+    .popup {
+        width: 100px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .popup a {
+        width: 75px;
+    }
+
+    .companyContainer {
+        margin-top: 0;
+    }
+
 }
