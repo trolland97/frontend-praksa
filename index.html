@@ -3,9 +3,8 @@
 
 <head>
     <title>DVG Company</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -19,8 +18,21 @@
             <div>
                 <img src="assets/images/logo.png" width="218" height="44" alt="logo" />
             </div>
-            <div class="hamburgMenu">
-                <i class="fa-solid fa-bars"></i>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropDown()"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">O NAMA</a>
+                    <a href="#">DVG PROIZVODI</a>
+                    <a href="#">BRENDOVI</a>
+                    <a href="#">DISTRIBUCIJA</a>
+                    <a href="#">SARADNJA</a>
+                    <a href="#">NOVOSTI</a>
+                    <a href="#">KONTAKT</a>
+                    <span>Srpski</span>
+                    <span>English</span>
+                    <span>Magyar</span>
+                    <button class="darkmodeBtn" onclick="darkMode()">Dark Mode</button>
+                </div>
             </div>
             <ul>
                 <li>Srpski</li>
@@ -29,7 +41,6 @@
                 <button class="darkmodeBtn" onclick="darkMode()">Dark Mode</button>
             </ul>
         </div>
-
     </div>
 
     <div class="navigationContainer">
@@ -170,8 +181,7 @@
 
         <div id="container">
             <div id="slider-container">
-                <span class="btn"><span onclick="slideRight()"><i class="fa fa-arrow-circle-left"
-                            style="font-size:36px;color: #bf0f0f;"></i></span></span>
+                <span onclick="slideRight()" class="btn"></span>
                 <div id="slider">
                     <div class="slide">
                         <div class="cards">
@@ -191,12 +201,12 @@
                             <span class="cardDesc">UBRUSI I TOALET PAPIRI</span>
                         </div>
                     </div>
-                    <div class="slide"><span>
-                            <div class="cards">
-                                <img src="assets/images/card4.png" alt="card4">
-                                <span class="cardDesc">KOZMETIKA</span>
-                            </div>
-                        </span></div>
+                    <div class="slide">
+                        <div class="cards">
+                            <img src="assets/images/card4.png" alt="card4">
+                            <span class="cardDesc">KOZMETIKA</span>
+                        </div>
+                    </div>
                     <div class="slide">
                         <div class="cards">
                             <img src="assets/images/card5.png" alt="card5">
@@ -204,16 +214,14 @@
                         </div>
                     </div>
                 </div>
-                <span class="btn"><span onclick="slideLeft()"><i class="fa fa-arrow-circle-right"
-                            style="font-size:36px;color: #bf0f0f;"></i></span></span>
+                <span onclick="slideLeft()" class="btn"></span>
             </div>
         </div>
-
-
 
         <div class="productsLogo">
             <img src="assets/images/productslogo.png" alt="productslogo">
         </div>
+
     </div>
     <div class="brandContainer" data-aos="fade-up">
         <div class="brandTitle">
@@ -298,19 +306,17 @@
     </div>
     <div class="popup">
         <button id="close">&times;</button>
-        <h2>xxx</h2>
-        <p>
-            xxx
-        </p>
-        <a href="#">Let's Go</a>
+        <h2>Dobro dosli na sajt DVG Company</h2>
+        <a id="continue">Nastavi</a>
     </div>
 </body>
-<script src="assets/js/slideshow.js"></script>
-<script src="assets/js/cardslider.js"></script>
-<script src="assets/js/darkmode.js"></script>
+<script src="assets/js/slideShow.js"></script>
+<script src="assets/js/darkMode.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/popup.js"></script>
+<script src="assets/js/cardSlider.js"></script>
+<script src="assets/js/dropDown.js"></script>
 
 
 </html>
